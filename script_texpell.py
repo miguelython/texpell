@@ -36,7 +36,7 @@ Error_found = False
 if "-l" in sys.argv :
     s = aspell.Speller('lang',sys.argv[sys.argv.index("-l")+1])
 else :
-    s = aspell.Speller('lang', 'fr')
+    s = aspell.Speller('lang', 'es')
 enc =s.ConfigKeys()[8][2]
 if "-c" in sys.argv :
     name_file = sys.argv[sys.argv.index("-c")+1]
@@ -125,6 +125,9 @@ if "-c" in sys.argv :
         if "\\end" in line :
             math_mode = False
     s.saveAllwords()
-    if Error_found : sys.exit( "Se encontraron errores...")
+    if Error_found : 
+        sys.exit( "Se encontraron errores...")
+    else :
+        print "No se encontraron errores"
 else :
     sys.exit( "Utiliza -c seguido del nombre del fichero tex que quieres comprobar")
