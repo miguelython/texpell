@@ -1,0 +1,2 @@
+aspell-python-py2
+matplotlib

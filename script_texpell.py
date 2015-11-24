@@ -1,3 +1,4 @@
+#!/usr/bin/python2
 #-*- coding: utf-8 -*-
 import matplotlib.pyplot as plt #No sé porque importar este modulo hace que lea bien utf-8
 import aspell
