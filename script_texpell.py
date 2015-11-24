@@ -43,7 +43,10 @@ if "-c" in sys.argv :
     file.close()
     math_mode = False
     math_text_mode = False
+    starting_line_document = 0
     for num_line in xrange(len(lines)) :
+         if "\\begin{document}" in lines[num_line] : starting_line_document=num_line
+    for num_line in xrange(starting_line_document,len(lines)) :
         line = lines[num_line]
         #math_text_mode = False
         if "%" in line :
