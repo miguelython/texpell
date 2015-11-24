@@ -1,5 +1,5 @@
 # Texpell
-A simple script in python using the aspell wrap develop to ignore math mode in latex documents
+A simple script in python using the aspell wrap developed to ignore math mode in latex documents
 
 ## Install
 `pip install -r requirements.txt`
