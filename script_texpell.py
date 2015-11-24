@@ -13,9 +13,11 @@ class bcolors:
     BOLD = '\033[1m'
     UNDERLINE = '\033[4m'
 def clean_pointuation(w):
+    #Supongo que se puede hacer con una lista un diccionario o algo mejor
     if w[-3:]=="..." : w = w[:-3]
     if len(w)>0 and w[-1]=="." : w = w[:-1]
     if len(w)>0 and w[-1]==":" : w = w[:-1]
+    if len(w)>0 and w[-1]==";" : w = w[:-1]
     if len(w)>0 and w[-1]=="," : w = w[:-1]
     if len(w)>0 and w[-1]=="!" : w = w[:-1]
     if len(w)>0 and w[-1]=="?" : w = w[:-1]
